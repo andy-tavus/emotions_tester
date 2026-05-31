@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tavus Emotion Tester</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Tavus Emotion Tester</h1>
+      <p class="subtitle">
+        Phoenix-4 echo mode — sends <code>&lt;emotion value="…"/&gt;</code> tags via
+        <code>conversation.echo</code>
+      </p>
+    </header>
+
+    <div class="main">
+      <aside class="sidebar">
+        <section class="join-panel">
+          <label>
+            Conversation ID
+            <input
+              id="conversation-id"
+              type="text"
+              placeholder="c477c9dd7aa6e4fe"
+              autocomplete="off"
+            />
+          </label>
+          <p id="resolved-url" class="resolved-url hidden"></p>
+          <div class="join-actions">
+            <button type="button" id="btn-join" class="primary">Join conversation</button>
+            <button type="button" id="btn-leave" class="danger hidden">Leave</button>
+            <button type="button" id="btn-interrupt" class="secondary hidden">Interrupt</button>
+          </div>
+          <p id="join-error" class="error hidden"></p>
+          <p class="status">Status: <strong id="join-status">idle</strong></p>
+        </section>
+
+        <section class="emotions">
+          <h2>Emotions</h2>
+          <div id="emotion-list"></div>
+        </section>
+
+        <section class="last-echo hidden" id="last-echo-section">
+          <h3>Last echo payload</h3>
+          <pre id="last-echo"></pre>
+        </section>
+
+        <section class="event-log">
+          <h3>Events</h3>
+          <ul id="event-log">
+            <li class="muted">No events yet</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="video-panel">
+        <div id="daily-container" class="daily-container">
+          <div id="video-placeholder" class="video-placeholder">
+            <p>Join a conversation to see the replica</p>
+          </div>
+          <div id="replicas-host" class="replicas-host hidden"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
