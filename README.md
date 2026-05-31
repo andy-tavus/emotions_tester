@@ -2,7 +2,9 @@
 
 Static, frontend-only tool for testing Phoenix-4 replica emotions via `conversation.echo` with explicit `<emotion value="…"/>` tags.
 
-No build step. No backend. No deployment.
+No build step. No backend.
+
+**Live app:** https://andy-tavus.github.io/emotions_tester/
 
 ## Run locally
 
