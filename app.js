@@ -11,6 +11,7 @@ const EMOTIONS = [
   'sad',
   'dejected',
   'scared',
+  'concern',
   'contempt',
   'disgusted',
   'surprised',
@@ -49,6 +50,10 @@ const DEFAULT_PHRASES = {
     "I'm not sure we should go down that path, and I want to be honest about why that makes me uneasy. " +
     'There are too many unknowns still, and one wrong move could make this much harder to recover from. ' +
     'Can we slow down, look at the risks together, and choose something that does not keep me up at night?',
+  concern:
+    'I want to pause here because I am genuinely worried about how this is landing for you. ' +
+    'Something in what you shared sounds heavier than you may be letting on, and I do not want to rush past that. ' +
+    'Tell me more about what is worrying you most, and we will take this one step at a time.',
   contempt:
     'I find that hard to take seriously, given how little thought seems to have gone into it. ' +
     'You are asking people to commit time and trust to something that does not survive basic scrutiny. ' +
